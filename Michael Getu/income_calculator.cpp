@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-
+    //Income calculator which calculates the income of a person whose tax is made after everything that he gets such as bonus, overtime.
 int main()
 {
     int count;
-    cout << "How many times do you want to calculate your BMI";
+    cout << "How many times do you want to calculate your BMI: ";
     cin >> count; 
 for (int i=0; i<count; i++)
 {
