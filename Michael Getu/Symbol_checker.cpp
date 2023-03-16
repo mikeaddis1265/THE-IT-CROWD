@@ -4,7 +4,7 @@ using namespace std;
 int main()
 
 {
-    for (int i; i; i++)
+    for (int i=0; ; i++)
     {
     char ch;
     cout << "\n Enter a symbol of your choice: "<<endl;
