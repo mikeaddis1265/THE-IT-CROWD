@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num, temp, first, last, count = 0;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    temp = num;
+    while(temp != 0)
+    {
+        count++;
+        temp /= 10;
+    }
+
+    last = num % 10;
+    first = num / pow(10, count-1);
+
+    num = last * pow(10, count-1) + num % (int)pow(10, count-1) / 10 + first;
+
+    cout << "The number after swapping the first and last digits is: " << num;
+
+    return 0;
+}
