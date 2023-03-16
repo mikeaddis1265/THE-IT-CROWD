@@ -1,0 +1,53 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  double gross_salary, worked_hours, pension_rate, overtime_bonus_rate, net_salary, pension_deduction, income_tax_deduction, overtime_payment, tax_rate, tax_deduction;
+  
+  // Read in input values from user
+  cout << "Enter gross salary: ";
+  cin >> gross_salary;
+  
+  cout << "Enter worked hours: ";
+  cin >> worked_hours;
+  
+  cout << "Enter pension rate: ";
+  cin >> pension_rate;
+
+  // Calculate pension deduction
+  pension_deduction = gross_salary * pension_rate / 100.0;
+
+  // Calculate regular pay and overtime pay if applicable
+  if (worked_hours > 40) {
+    double overtime_hours = worked_hours - 40;
+    cout << "Enter overtime bonus rate per hour: ";
+    cin >> overtime_bonus_rate;
+    overtime_payment = overtime_hours * overtime_bonus_rate;
+    gross_salary += overtime_payment;
+  }
+
+  // Calculate income tax deduction based on tax rate brackets
+  if (gross_salary <= 200) {
+    tax_rate = 0.0;
+  } else if (gross_salary <= 600) {
+    tax_rate = 0.1;
+  } else if (gross_salary <= 1200) {
+    tax_rate = 0.15;
+  } else if (gross_salary <= 2000) {
+    tax_rate = 0.2;
+  } else if (gross_salary <= 3500) {
+    tax_rate = 0.25;
+  } else {
+    tax_rate = 0.3;
+  }
+  tax_deduction = gross_salary * tax_rate;
+  
+  // Calculate net salary
+  net_salary = gross_salary - pension_deduction - tax_deduction;
+
+  // Output net salary to user
+  cout << "Net salary: $" << net_salary << endl;
+
+  return 0;
+}
