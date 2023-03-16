@@ -294,7 +294,6 @@ int main() {
         }
         break;
         case 0:
-        cout << "Input a valid number!";
         break;
     }
     return 0;
