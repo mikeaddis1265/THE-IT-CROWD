@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int number, originalNumber, remainder, result = 0;
+    cout << "Enter a positive integer: ";
+    cin >> number;
+    originalNumber = number;
+    while (originalNumber != 0) {
+        remainder = originalNumber % 10;
+        int factorial = 1;
+        for (int i = 1; i <= remainder; i++) {
+            factorial *= i;
+        }
+        result += factorial;
+        originalNumber /= 10;
+    }
+    if (result == number)
+        cout << number << " is a Strong number.";
+    else
+        cout << number << " is not a Strong number.";
+    return 0;
+}
