@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int num;
-    cout << "\t BMI Calculator"<<endl;
+    cout << "\t Grade Calculator"<<endl;
     cout << "To Calculate the Grade of 1 person, Enter (1)"<<endl;
     cout << "To Calculate the Grade of known number of people, Enter (2)"<<endl;
     cout << "To calculate the Grade of unknown number of people, Enter (3)"<<endl;
