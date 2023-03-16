@@ -1,0 +1,10 @@
+int num,count_=0;
+cout<<" enter a number: ";
+cin>>num;
+while(num!=0)
+{
+num/=10;
+count_++;
+
+}
+cout<<"number of digits are: "<<count_<<endl;
