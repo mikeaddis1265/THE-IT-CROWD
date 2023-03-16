@@ -1,0 +1,12 @@
+int n;
+cout<<"enter a number : ";
+cin>>n;
+
+int first=n;
+while(first>=10)
+{
+    first/=10;
+}
+int last=n%10;
+cout<<"the first digit of the number is: "<<firstdigit<<endl;
+cout<<"the last digit of the number is: "<<lastdigit<<endl;
