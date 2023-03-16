@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number, digit, count;
+    
+    cout << "Enter a number: ";
+    cin >> number;
+    for (int i = 0; i <= 9; i++) {
+        digit = i;
+        count = 0;
+        int temp = number;
+        while (temp > 0) {
+            if (temp % 10 == digit) {
+                count++;
+            }
+            temp /= 10;
+        }
+        cout << "Frequency of " << digit << " = " << count << endl;
+    }
+    
+    return 0;
+}
