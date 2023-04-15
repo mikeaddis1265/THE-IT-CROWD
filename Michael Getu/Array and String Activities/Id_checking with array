@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+    char team[][11] = {"ETS0839/14", "ETS0814/14", "ETS0955/14", "ETS1020/14", "ETS1061/14"};
+
+    char id[11];
+
+    cout << "Enter a team member ID: ";
+    cin.getline(id, 11);
+
+    for(int i=0; i<5; i++)
+    {
+        if(strcmp(team[i], id) == 0)
+        {
+            cout << "ID Found:" << id << endl;
+            return 0;
+        }
+    }
+
+    cout << "Error: ID not found." << endl;
+
+    return 0;
+}
