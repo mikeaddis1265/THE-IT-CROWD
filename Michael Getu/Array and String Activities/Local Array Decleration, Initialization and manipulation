@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+int main() 
+{
+    /// Decleration of array
+    int years [100];
+    char letter [30];
+    float velo [32];
+    // double voltage [30];
+    // Initialization of array
+
+    int voltage [10] = {89,75,82,93,78,95,81,88,77,82};
+    
+    for (int i=0; i<10; i++) {
+        cout << voltage[i]<<"\t";
+    }
+        cout << endl;
+    double pri_slopes [] = {11.62,13.98,18.45,12.68,14.76};
+    for (int i=0; i<5; i++) {
+        cout << pri_slopes[i]<<"\t";
+    }
+        cout << endl;
+    cout << endl;
+    // 
+    //cout << glb_num[10];
+        //cout << endl;
+    int loc_num [10];
+    for (int i=0; i<10; i++) {
+        cout << loc_num[i]<<"\t";
+    }
+    
+   
+return 0;
+}
