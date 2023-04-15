@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main() {
+    int stud_num, stud_mark, stud_sem;
+    cout << "Enter the student name, student mark and student semister respectively: ";
+    cin >> stud_num>> stud_mark>> stud_sem;
+    string stud_info[stud_num][stud_mark][stud_sem];
+    for (int i=0; i<stud_num; i++) {
+        for (int j=0; j<stud_mark; j++) {
+            for (int k=0; k<stud_sem; k++) {
+                cout << "student "<<i+1 << " in semester " << j+1 << " and assesment "<< k+1<<":";
+                cin >> stud_info[i][j][k];
+            }
+        }
+    }
+    for (int i=0; i<stud_num; i++) {
+        for (int j=0; j<stud_mark; j++) {
+            for (int k=0; k<stud_sem; k++) {
+                cout<< stud_info[i][j][k]<<"\t";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+}
