@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int value = 10;
+    int *ptr = &value;
+
+    cout << "Value: " << value << endl;
+    cout << "Pointer: " << ptr << endl;
+    cout << "Dereferenced Pointer: " << *ptr << endl;
+
+    return 0;
+}
