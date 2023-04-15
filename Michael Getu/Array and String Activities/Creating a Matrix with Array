@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int max_Rnum=10;
+    int max_Cnum=10;
+    int mx1[max_Rnum][max_Cnum];
+    int rows, colls;
+    bool done=true;
+    cout << "How many rows does your matrix have: ";
+    cin >> rows;
+    cout << "How many colomns does your matrix have: ";
+    cin >> colls;
+    for (int r=1;r<=rows; r++) {
+        for (int c=1; c<=colls; c++) {
+            
+                 cout<< "Enter the element for row "<<r << " collomn "<< c<<" of matrix: " ;
+                 cin >> mx1[r][c];
+            }
+        }
+        cout << "The Matrix you created is: "<<endl;
+    for (int r=1; r<=rows; r++) {
+        for (int c=1; c<=colls; c++) {
+             cout << mx1[r][c];
+             cout << "\t";
+           }
+        cout << endl;
+        }
+}
