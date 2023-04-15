@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+    int side1;
+    int side2;
+    int hyp;
+    for (int  w=1; w<100; w++) {
+        for (int h=1; h<100; h++ ) {
+            for (hyp=1; hyp<100; hyp++) {
+                if (hyp== (pow(w,2) + pow(h,2))) {
+                    cout <<"|"<< "Side1"<<"\t"<<"|"<<"Side2"<<"\t"<<"|"<<"Hypotenuese"<<"\t"<<"|"<<endl; 
+                    cout <<"|"<< w<<"\t"<<"|"<<h<<"\t"<<"|"<<hyp<<"\t\t"<<"|"<<endl;                 
+                }
+            }
+        }
+    }
+}
