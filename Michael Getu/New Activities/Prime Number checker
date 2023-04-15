@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+   for (int c;;c++) {
+   int num;
+   cout << "Enter a positive number : ";
+   cin >> num;
+   bool val = true;
+   if (num == 0 || num == 1) {
+    val = false;
+  }
+   for (int i=2; i<=num/2; i++) {
+      num%i;
+      if (num>2 && num%i ==0) {
+         val = false;
+         } 
+      }
+   if (val) {
+      cout << "Prime"<<endl;
+   } else {
+      cout << "Not prime"<<endl;
+   }
+   }
+}
