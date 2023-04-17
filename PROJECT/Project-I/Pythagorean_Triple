@@ -13,14 +13,14 @@ int main() {
 
 //Mikiyas Alemayehu Gebrewold
       
-                                else
-                                     {
-                                         cout<<"DO YOU WANT TO BACK TO MAIN choice (y/n)"<<endl;
-                                          cin>>choice;
-                                          if(choice=='y'||choice=='Y')
-                                                goto main;
-                                         else
-                                               return 0;
+  else
+   {
+    cout<<"DO YOU WANT TO BACK TO MAIN choice (y/n)"<<endl;
+     cin>>choice;
+     if(choice=='y'||choice=='Y')
+            goto main;
+        else
+        return 0;
 }
         }
         else
