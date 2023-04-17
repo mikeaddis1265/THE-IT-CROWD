@@ -6,7 +6,54 @@ int main() {
 
 
 //mike siyamreg
+Hypotenuse_square=Hypotenuse*Hypotenuse;
+if (Hypotenuse_square==side1_square+side2_square)
+{
+//code to print the output in table form.
+if (side1==3 || side1==4 )
+{
+cout<<"\t\t";                 cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
+cout<<"\t\t|_______________|_______________|_______________|"<<endl;
 
+}
+else   if (side1==5  ||side1==6 ||side1==7 ||side1==8  ||side1==9)
+{
+cout<<"\t\t";                  cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
+cout<<"\t\t|_______________|_______________|_______________|"<<endl;
+}
+else if (side1==12 ||side1==15 ||side1==24 ||side1==40)
+{
+if (side2==5 ||side2==7||side2==8 ||side2==9)
+{
+cout<<"\t\t";                 cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
+cout<<"\t\t|_______________|_______________|_______________|"<<endl;
+
+}
+}
+
+else
+{
+cout<<"\t\t";                 cout<<"| "<< side1<<"\t\t|"<<side2<<"\t\t|"<< Hypotenuse<<"\t\t|"<<endl;
+cout<<"\t\t|_______________|_______________|_______________|"<<endl;
+
+}
+
+}
+
+}
+}
+}
+cout<<"\nDO YOU WANT TO BCAK TO MAIN CHOICE (y/n)"<<endl;
+cin>>choice;
+if(choice=='y'||choice=='Y')
+{
+    goto main;
+}
+else
+{
+        return 0;
+}
+}
 
 //mike addis
 
