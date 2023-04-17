@@ -3,6 +3,100 @@
 using namespace std;
 
 int main() {
+//mike alem
+
+//mike siyamreg
+
+//mike addis
+
+//mike gebrewold
+
+//mike getu
+
+			// declaration and initialization variables and strings for passport searching
+			system("CLS");
+			system("color 06");
+			string tobesearched_passport;
+			cout<<"please enter the passport "<<endl;
+			cin>>tobesearched_passport;
+			bool passport_found= false;
+			int idx;
+			//search among all alternative
+			for(int i=0 ; i<100 ; i++) {
+				if(passport[i]==tobesearched_passport) {
+					idx=i;
+					passport_found=true;
+					break;
+				}
+
+			}
+			//display if the input passport is found
+			if(passport_found) {
+				system("CLS");
+				system("color 02");
+				cout<<endl;
+				cout << "\t\nPassport Found!"<<endl<<endl;
+				cout<<"\t-------------------------------------------"<<endl;
+				cout << "\tName:  " << name[idx]<< endl;
+				cout << "\tSex:   " << sex[idx]<< endl;
+				cout << "\tAge:   " << age[idx]<< endl;
+				cout << "\tPassport number:   " << passport[idx]<< endl;
+				cout << "\tSeatNo:" << idx+1<<endl;
+				cout << "\tSection: Economy" << endl;
+				cout<<"\t-------------------------------------------"<<endl;
+			} else {
+				// display the output prompt with red color if passport is not found
+				system("CLS");
+				system("color 04");
+				cout<<"\n\t*************************************************************"<<endl;
+				cout <<"\tPassport Not Found !"<<endl;
+				cout<<"\t*************************************************************\n"<<endl;
+			}
+			system("pause");
+			system("CLS");
+		}
+//  to display all list of passengers
+		else if(main_choice==3) {
+
+			system("CLS");
+			system("color 09");
+		
+			for(int i = 0; i < 100; i++) {
+				first_class=i;
+				if(name[i].size() != 0){
+					cout<<"\n";
+					cout<<"\t******* Boarding pass **********"<<endl;
+					cout<<"\t* Name : "<<name[first_class]<<endl;
+					cout<<"\t* Sex  : "<<sex[first_class]<<endl;
+					cout<<"\t* Age  : "<<age[first_class]<<endl;
+					cout<<"\t* Passport number  : "<<passport[first_class]<<endl;
+					cout<<"\t*-------------------------------"<<endl;
+					cout<<"\t* Seat number : "<< ++first_class<<endl;
+					if(i < 30)
+						cout<<"\t*Section: first               " << endl;
+					else
+						cout<<"\t*Section: Economy               " << endl;
+					cout<<"\t*Enjoy your flight!             " << endl;
+					cout<<"\t*-------------------------------"<<endl;
+					cout<<"\t*********************************\n"<<endl;
+				}
+				
+		}
+			economic_class=now_economic_class;
+			first_class=now_first_class;
+				cout<<"\n-------------------------------------------------"<<endl;
+				system("pause");
+				system("CLS");
+		}
+// to exit the program
+		else if(main_choice==4) {
+			return 0;
+		} else {
+			cout<<"Invalid input. please try again"<<endl;
+			system("pause");
+			system("CLS");
+		}
+	} while(continueloop);
 
 return 0;
 }
