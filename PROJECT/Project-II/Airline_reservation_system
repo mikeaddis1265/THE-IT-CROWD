@@ -4,7 +4,50 @@ using namespace std;
 
 int main() {
 //mike alem
+					// declaration and initialization
+	int first_class= 0;
+	int economic_class=30;
+	string name[100];
+	int age[100];
+	char sex[100];
+	string passport[100];
+	int   main_choice;
+	int sub_choice;
+	char yes_no;
+	int now_economic_class;
+	int now_first_class;
+	bool continueloop=true;
+	// do- while loop for continues program
+	do {
+		system("color F1");// to make background color white and text color blue
+		cout<<endl;
+//main page option
 
+		cout<<"\t*********************************************************************************************"<<endl;
+		cout<<"\t*___________________________________________________________________________________________*"<<endl;;
+		cout<<"\t*                               Airline Reservation System                                  *"<<endl;
+		cout<<"\t*___________________________________________________________________________________________*"<<endl;
+		cout<<"\t*  Book a flight------------------------------------------------------------------------[1] *"<<endl;
+		cout<<"\t*___________________________________________________________________________________________*"<<endl;
+		cout<<"\t*  Search for attendance----------------------------------------------------------------[2] *"<<endl;
+		cout<<"\t*___________________________________________________________________________________________*"<<endl;
+		cout<<"\t*  List  all passengers-----------------------------------------------------------------[3] *"<<endl;
+		cout<<"\t*___________________________________________________________________________________________*"<<endl;
+		cout<<"\t*  Exit---------------------------------------------------------------------------------[4] *"<<endl;
+		cout<<"\t*___________________________________________________________________________________________*"<<endl;
+		cout<<"\t*********************************************************************************************"<<endl;
+		cout<<"   Enter your choice here : "; //ask the user to choice among the main option
+		cin>>main_choice;
+		if(main_choice==1) {
+			if(first_class>30 && economic_class>100) {
+				system("CLS");
+				cout<<"ALL SEATS ARE BOOKED "<<endl;
+				system("pause");
+				system("CLS");
+			} else {
+				system("CLS");  // to clear console window
+				system("color 06");//to make background color black and text color yellow
+				cout<<endl;
 //mike siyamreg
 				//list of available class
 				cout<<"\t*********************************************************************************"<<endl;
