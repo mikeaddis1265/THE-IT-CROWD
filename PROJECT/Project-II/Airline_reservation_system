@@ -70,7 +70,60 @@ choice :
 
 //mike addis
 
-//mike gebrewold
+//mikiyas Alemayehu Gebrewold
+                    //display boarding pass according to the user information
+							cout<<"\t******* Boarding pass **********"<<endl;
+							cout<<"\t* Name : "<<name[first_class]<<endl;
+							cout<<"\t* Sex  : "<<sex[first_class]<<endl;
+							cout<<"\t* Age  : "<<age[first_class]<<endl;
+							cout<<"\t* Passport number  : "<<passport[first_class]<<endl;
+							cout<<"\t*-------------------------------"<<endl;
+							cout<<"\t* Seat number : "<< ++first_class<<endl;
+							cout<<"\t*Section: first               " << endl;
+							cout<<"\t*Enjoy your flight!             " << endl;
+							cout<<"\t*-------------------------------"<<endl;
+							cout<<"\t*********************************\n"<<endl;
+							now_first_class=first_class;
+						} else {
+							cout<<"NEXT FLIGHT LEAVES IN 3 HOURS"<<endl;
+						}
+
+					} else {
+						// prompt the user name,sex , age and passport number
+						cout<<"\nEnter your name please : ";
+						cin.ignore();
+						getline(cin, name[economic_class]);
+						cout<<"Enter your sex (m/f) : ";
+						cin>>sex[economic_class];
+						cout<<"Enter your age : ";
+						cin>>age[economic_class];
+						cout<<"Enter your passport : ";
+						cin>>passport[economic_class];
+						cout<<"\n";
+						//display boarding pass according to the user information
+						cout<<"\t******* Boarding pass **********"<<endl;
+						cout<<"\t* Name : "<<name[economic_class]<<endl;
+						cout<<"\t* Sex  : "<<sex[economic_class]<<endl;
+						cout<<"\t* Age  : "<<age[economic_class]<<endl;
+						cout<<"\t* Passport number  : "<<passport[economic_class]<<endl;
+						cout<<"\t*-------------------------------"<<endl;
+                                                cout<<"\t* Seat number : "<< ++economic_class<<endl;
+						cout<<"\t*Section: economy               " << endl;
+						cout<<"\t*Enjoy your flight!             " << endl;
+						cout<<"\t*-------------------------------"<<endl;
+						cout<<"\t*********************************\n"<<endl;
+						/*assign the value of economic class to variable now_economic_class
+						helps us to list all passengers and back again to booking ticket*/
+						now_economic_class=economic_class;
+					}
+				} else {
+					cout<<"Invalid input please enter 1 or 2";
+}
+				system("pause");
+				system("CLS");
+			}
+		} 
+              else if(main_choice==2) {
 
 //mike getu
 
