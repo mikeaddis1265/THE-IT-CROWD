@@ -6,6 +6,67 @@ int main() {
 //mike alem
 
 //mike siyamreg
+				//list of available class
+				cout<<"\t*********************************************************************************"<<endl;
+				cout<<"\t*____________________List of available classes__________________________________*"<<endl;
+				cout<<"\t*  First class --------------------------------------------------------------[1]*"<<endl;
+				cout<<"\t*_______________________________________________________________________________*"<<endl;
+				cout<<"\t* Economy class -------------------------------------------------------------[2]*"<<endl;
+				cout<<"\t*********************************************************************************"<<endl;
+choice :
+				cout<<"   Enter your choice here : ";
+				cin>>sub_choice;
+				if(sub_choice != 1 && sub_choice!=2) {
+					cout<< "invalid input"<<endl;
+					goto choice;
+				}
+				// code to make reservation class for first class
+				if(sub_choice==1) {
+					system("CLS");
+					if(first_class>30) {
+						//ask the user if he/she wants to take reservation in economy class
+						cout<<"First class is full. do you want to book economic class? (y/n)"<<endl;
+						cin>>yes_no;
+						if(yes_no=='y' || yes_no=='Y') {
+							// prompt the user name,sex , age and passport number
+							cout<<"\nEnter your name please : "; 
+							cin.ignore();
+							getline(cin, name[economic_class]);
+							cout<<"Enter your sex (m/f) : ";
+							cin>>sex[economic_class];
+							cout<<"Enter your age : ";
+							cin>>age[economic_class];
+							cout<<"Enter your passport : ";
+							cin>>passport[economic_class];
+							cout<<"\n";
+							//display boarding pass according to the user information
+							cout<<"\t******* Boarding pass **********"<<endl;
+							cout<<"\t* Name : "<<name[economic_class]<<endl;
+							cout<<"\t* Sex  : "<<sex[economic_class]<<endl;
+							cout<<"\t* Age  : "<<age[economic_class]<<endl;
+							cout<<"\t* Passport number  : "<<passport[economic_class]<<endl;
+							cout<<"\t*-------------------------------"<<endl;
+							cout<<"\t* Seat number : "<< ++economic_class<<endl;
+							cout<<"\t*Section: economy               " << endl;
+							cout<<"\t*Enjoy your flight!             " << endl;
+							cout<<"\t*-------------------------------"<<endl;
+							cout<<"\t*********************************\n"<<endl;
+							now_economic_class=economic_class;
+						} else {
+							cout<<"NEXT FLIGHT LEAVES IN 3 HOURS"<<endl;
+						}
+					} else {
+						// prompt the user name,sex , age and passport number
+						cout<<"\nEnter your name please : ";
+						cin.ignore();
+						getline(cin, name[first_class]);
+						cout<<"Enter your sex (m/f) : ";
+						cin>>sex[first_class];
+						cout<<"Enter your age : ";
+						cin>>age[first_class];
+						cout<<"Enter your passport : ";
+						cin>>passport[first_class];
+						cout<<"\n";
 
 //mike addis
 
