@@ -1,10 +1,10 @@
-#include<iostream>
-#include<string>
+// Airline reservation system
+#include <iostream>
+#include <string.h>
 using namespace std;
 
 int main() {
-//mike alem
-					// declaration and initialization
+// declaration and initialization
 	int first_class= 0;
 	int economic_class=30;
 	string name[100];
@@ -48,7 +48,6 @@ int main() {
 				system("CLS");  // to clear console window
 				system("color 06");//to make background color black and text color yellow
 				cout<<endl;
-//mike siyamreg
 				//list of available class
 				cout<<"\t*********************************************************************************"<<endl;
 				cout<<"\t*____________________List of available classes__________________________________*"<<endl;
@@ -110,8 +109,6 @@ choice :
 						cout<<"Enter your passport : ";
 						cin>>passport[first_class];
 						cout<<"\n";
-
-//mike addis
 						//display boarding pass according to the user information
 						cout<<"\t******* Boarding pass **********"<<endl;
 						cout<<"\t* Name : "<<name[first_class]<<endl;
@@ -179,38 +176,6 @@ choice :
 						cout<<"Enter your passport : ";
 						cin>>passport[economic_class];
 						cout<<"\n";
-
-
-//mikiyas Alemayehu Gebrewold
-                    //display boarding pass according to the user information
-							cout<<"\t******* Boarding pass **********"<<endl;
-							cout<<"\t* Name : "<<name[first_class]<<endl;
-							cout<<"\t* Sex  : "<<sex[first_class]<<endl;
-							cout<<"\t* Age  : "<<age[first_class]<<endl;
-							cout<<"\t* Passport number  : "<<passport[first_class]<<endl;
-							cout<<"\t*-------------------------------"<<endl;
-							cout<<"\t* Seat number : "<< ++first_class<<endl;
-							cout<<"\t*Section: first               " << endl;
-							cout<<"\t*Enjoy your flight!             " << endl;
-							cout<<"\t*-------------------------------"<<endl;
-							cout<<"\t*********************************\n"<<endl;
-							now_first_class=first_class;
-						} else {
-							cout<<"NEXT FLIGHT LEAVES IN 3 HOURS"<<endl;
-						}
-
-					} else {
-						// prompt the user name,sex , age and passport number
-						cout<<"\nEnter your name please : ";
-						cin.ignore();
-						getline(cin, name[economic_class]);
-						cout<<"Enter your sex (m/f) : ";
-						cin>>sex[economic_class];
-						cout<<"Enter your age : ";
-						cin>>age[economic_class];
-						cout<<"Enter your passport : ";
-						cin>>passport[economic_class];
-						cout<<"\n";
 						//display boarding pass according to the user information
 						cout<<"\t******* Boarding pass **********"<<endl;
 						cout<<"\t* Name : "<<name[economic_class]<<endl;
@@ -218,7 +183,7 @@ choice :
 						cout<<"\t* Age  : "<<age[economic_class]<<endl;
 						cout<<"\t* Passport number  : "<<passport[economic_class]<<endl;
 						cout<<"\t*-------------------------------"<<endl;
-                                                cout<<"\t* Seat number : "<< ++economic_class<<endl;
+						cout<<"\t* Seat number : "<< ++economic_class<<endl;
 						cout<<"\t*Section: economy               " << endl;
 						cout<<"\t*Enjoy your flight!             " << endl;
 						cout<<"\t*-------------------------------"<<endl;
@@ -229,15 +194,11 @@ choice :
 					}
 				} else {
 					cout<<"Invalid input please enter 1 or 2";
-}
+				}
 				system("pause");
 				system("CLS");
 			}
-		} 
-              else if(main_choice==2) {
-
-//mike getu
-
+		} else if(main_choice==2) {
 			// declaration and initialization variables and strings for passport searching
 			system("CLS");
 			system("color 06");
@@ -323,5 +284,5 @@ choice :
 		}
 	} while(continueloop);
 
-return 0;
+	return 0;
 }
