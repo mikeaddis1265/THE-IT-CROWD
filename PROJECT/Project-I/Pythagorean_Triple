@@ -1,8 +1,10 @@
 #include<iostream>
+#include<cmath>
+#include<string>
 using namespace std;
 
 int main() {
-//mike alemayew
+//mike alemayeww
    //Declaration
     int side1=1, side2=1, Hypotenuse=1;
     int side1_square,side2_square,Hypotenuse_square;
