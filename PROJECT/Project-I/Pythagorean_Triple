@@ -99,6 +99,53 @@ else
 }
 
 //mike addis
+ //code to print Pythagorean triples for side 1, side 2 and the hypotenuse, all no larger than 100 in geometric form.
+ else if(main_choice==2)
+
+ {
+    system("CLS");
+     	system("color 04");
+  input:  cout<<" \n*******************************************************************"<<endl;
+  //ask the user to input the value for side 1 and side 2
+  side1:   cout<<"enter a value for side 1 :  ";
+    cin>>side1;
+    if(side1<=0 || side1>=100)
+    {
+        cout<<"please enter a number only from 1 - 100 "<<endl;
+    goto side1;
+    }
+side2:    cout<<"enter a value for side 2 : ";
+     cin>>side2;
+      if(side2<=0 || side2>=100)
+      {
+      cout<<"please enter a number only from 1 - 100 "<<endl;
+    goto side2;
+
+      }
+      //code to compute hypotenuse
+     double Hypsqr = pow(side1, 2) + pow(side2, 2);
+      double sqrtHyp = sqrt(Hypsqr);
+      //to display rigth triangle in geometric form.
+if(sqrtHyp<100)
+{
+    if(sqrtHyp==floor(sqrtHyp))
+    {
+        if(side1<=9)
+        {
+                       cout<<side1<<"^2 +"<<side2<<"^2 ="<<sqrtHyp<<endl<<endl;
+                       cout<<"\t"; cout<< " |\\ "<<endl;
+                       cout<<"\t";      cout<<" | \\ "<<endl;
+                       cout<<"\t";      cout<<" |  \\ "<<endl;
+                       cout<<"  "<<side1<<"      |   \\ "<<sqrtHyp<<endl;
+                       cout<<"\t";      cout<<" |    \\ "<<endl;
+                       cout<<"\t";      cout<<" |_____\\ "<<endl;
+                       cout<<"\t     " ;    cout<<side2<<endl;
+                       cout<<"DO YOU WANT TO INPUTE OTHER NUMBERS (y/n) "<<endl;
+                                 cin>>choice;
+                            if(choice=='y'|| choice=='Y' )
+                                  {
+                                      goto input;
+                                  }
 
 
 //Mikiyas Alemayehu Gebrewold
