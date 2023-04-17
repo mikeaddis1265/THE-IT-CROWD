@@ -2,6 +2,26 @@
 using namespace std;
 
 int main() {
+//mike alemayew
+
+//mike siyamreg
+
+//mike addis
+
+//mike gebrewold
+
+//mike getu
+		for(int k = 0; k < space; k++)
+			cout<<" ";
+  //reinitialization after one itration
+        array_element++;
+		space--;
+		j--;
+	}
+cout<<"___________________________________"<<endl;
+//code to print red color
+system("color 04");
+
 
 return 0;
 }
