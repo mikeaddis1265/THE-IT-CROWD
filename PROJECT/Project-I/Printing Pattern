@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 //mike alemayew
-{
+
     //declaration
     char array_[15] = {'H','G','F','E','D','C','B','A','B','C','D','E','F','G','H'};
     int array_element = 15;
