@@ -5,6 +5,17 @@ int main() {
 //mike alemayew
 
 //mike siyamreg
+{
+cout<<array_[j];
+	//code to print Green color
+	system("color 02");
+	j++;
+}
+cout<<endl;
+	//inner loop to print space
+	for(int k = 0; k < space; k++)
+cout<<" ";
+
 
 //mike addis
 
