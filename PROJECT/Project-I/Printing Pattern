@@ -1,4 +1,6 @@
 #include<iostream>
+#include<cmath>
+#include<string>
 using namespace std;
 
 int main() {
@@ -30,6 +32,19 @@ cout<<" ";
 
 
 //mike addis
+//reinitialization after one itration
+		array_element--;
+		space++;
+		j = i+1;
+	}
+	// reinitialization for remaining
+ array_element = 8;
+	  space = 6;
+	 j = 7;
+	 //outer loop to determine number of rows
+	for(int i = 0; i < 8; i++)
+	{
+
 
 //Mikiyas Alemayehu Gebrewold 
 //inner loop to print array elementes	
