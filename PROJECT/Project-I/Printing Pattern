@@ -8,7 +8,18 @@ int main() {
 
 //mike addis
 
-//mike gebrewold
+//Mikiyas Alemayehu Gebrewold 
+//inner loop to print array elementes	
+	while(j<array_element)	
+	{			
+cout<<array_[j];	
+//code to print yellow color		
+	system("color 06");		
+	j++;	
+	}	
+	j=7-i;		
+cout<<endl;	
+	  //inner loop to print space
 
 //mike getu
 		for(int k = 0; k < space; k++)
