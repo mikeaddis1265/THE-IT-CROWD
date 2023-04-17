@@ -3,7 +3,50 @@ using namespace std;
 
 int main() {
 //mike alemayew
-
+   //Declaration
+    int side1=1, side2=1, Hypotenuse=1;
+    int side1_square,side2_square,Hypotenuse_square;
+    int main_choice;
+    char choice;
+ main: system("CLS");
+      system("color F0");
+//welcoming and asking  a user for a choice to program
+  cout<<"================================================"<<endl;
+        cout<<" WELCOME TO OUR PROGRAM                         "<<endl;
+        cout<<"________________________________________________\n"<<endl;
+        cout<<" 1) pythagorean triples "<<endl;
+        cout<<" 2) to check paythagorean triple & display sides of right triangle geometrically "<<endl;
+        cout<<" 3) exit \n"<<endl;
+ Choice_again: cout<<"enter your choice : ";
+ cin>>main_choice;
+ if(main_choice==1){
+     	system("CLS");
+     	system("color 06");
+     //to display right triangle geometricaly
+cout<<"right triangle :-"<<endl;
+ cout<<"\t";    cout<< " |\\ "<<endl;
+cout<<"\t";      cout<<" | \\ "<<endl;
+cout<<"\t";      cout<<" |  \\ "<<endl;
+cout<<"side-1";cout<<"   |   \\ "<<" Hypotenuse"<<endl;
+cout<<"\t";      cout<<" |_   \\ "<<endl;
+cout<<"\t";      cout<<" |_|___\\ "<<endl;
+cout<<"\t" ;    cout<<" side-2"<<endl;
+// to do brute-force computing and display a table of Pythagorean triples
+cout<<"\n the following table displays Pythagorean triples for side 1, side 2 and the hypotenuse, all no larger than 100\n"<<endl;
+    cout<<"\t\t_________________________________________________"<<endl;
+    cout <<"\t\t|  side-1       |"<<"  side-2       |"<<" Hypotenuse    |"<<endl;
+    cout<<"\t\t|_______________|_______________|_______________|"<<endl;
+    //loop through all possible values of side1
+    for (side1=1; side1<100; side1++)
+    {
+        //loop through all possible values of side2
+        for (side2=1;side2<100;side2++ )
+        {
+            //loop through all possible values of side3
+            for (Hypotenuse=1; Hypotenuse<100; Hypotenuse++)
+            {
+                side1_square=side1*side1;
+                side2_square=side2*side2;
 
 //mike siyamreg
 Hypotenuse_square=Hypotenuse*Hypotenuse;
